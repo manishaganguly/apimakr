@@ -1,7 +1,8 @@
 def files = ''
  def filelist = []
 def fileNmExt =''
-def gitPath = '/Users/manishamishra/Documents/APIMAKER/APIMakrTargetRepo/apimakr/' def apimkrPath = '/Users/manishamishra/Documents/ctsapimakr/'
+def gitPath = '/Users/Shared/Jenkins/APIMAKER/APIMakrTargetRepo/apimakr/'
+def apimkrPath = '/Users/Shared/Jenkins/'
 def org = 'manishamishra2-eval'
 pipeline{
     agent any
