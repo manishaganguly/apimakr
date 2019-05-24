@@ -1,8 +1,8 @@
 def files = ''
  def filelist = []
 def fileNmExt =''
-def gitPath = 'C:\Manisha\personal\APIMakerDemo\apimakr\'
-def apimkrPath = 'C:\Manisha\personal\'
+def gitPath = 'C:\\Manisha\\personal\\APIMakerDemo\\'
+def apimkrPath = 'C:\\Manisha\\personal\\ctsapimakr\\'
 def org = 'manishamishra2-eval'
 pipeline{
     agent any
@@ -14,7 +14,7 @@ pipeline{
 
     environment{
 
-        NODE_PATH = "C:\Users\manisha.mishra\AppData\Roaming\npm\node_modules"
+        NODE_PATH = "C:\\Users\\manisha.mishra\\AppData\\Roaming\\npm\\node_modules"
         FileSep = "/"
 
     }
