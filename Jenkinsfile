@@ -1,5 +1,5 @@
 def files = ''
- def filelist = []
+def filelist = []
 def fileNmExt =''
 def gitPath = 'C:\\Manisha\\personal\\APIMakerDemo\\'
 def apimkrPath = 'C:\\Manisha\\personal\\ctsapimakr\\'
@@ -13,7 +13,7 @@ pipeline{
     }
 
     environment{
-
+		PATH = "C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\bin;${env.PATH}"
         NODE_PATH = "C:\\Users\\manisha.mishra\\AppData\\Roaming\\npm\\node_modules"
         FileSep = "/"
 
