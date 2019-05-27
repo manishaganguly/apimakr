@@ -3,7 +3,7 @@ def filelist = []
 def fileNmExt =''
 def gitPath = 'C:/Manisha/personal/APIMakerDemo/apimakr/'
 def apimkrPath = 'C:/Manisha/personal/ctsapimakr/'
-def org = 'manishamishra2-eval'
+def org = 'manishamishra-eval'
 pipeline{
     agent any
     tools {
