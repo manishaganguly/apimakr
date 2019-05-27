@@ -1,8 +1,8 @@
 def files = ''
 def filelist = []
 def fileNmExt =''
-def gitPath = 'C:\\Manisha\\personal\\APIMakerDemo\\apimakr\\'
-def apimkrPath = 'C:\\Manisha\\personal\\ctsapimakr\\'
+def gitPath = 'C:/Manisha/personal/APIMakerDemo/apimakr/'
+def apimkrPath = 'C:/Manisha/personal/ctsapimakr/'
 def org = 'manishamishra2-eval'
 pipeline{
     agent any
@@ -54,9 +54,9 @@ pipeline{
 
             steps{
                 script{
-
                 def oasPath = apimkrPath+filelist[1];
                 def gitpullpath = gitPath+filelist[0]+"${env.FileSep}"+filelist[1];
+				
                 sh("cp ${gitpullpath} ${oasPath}")
                 dir(apimkrPath){
                    sh("ctsapimakr initialize ${filelist[0]} ${org} ${oasPath}")
