@@ -20,14 +20,13 @@ pipeline{
 
     stages{
 
-
         stage('Git Pull'){
 
             steps{
 
                 dir(gitPath){
                    script{
-		    echo "${env.apigee_deploy_user}"
+					echo "${env.apigee_deploy_user}"
                     sh('git pull')
                     files = sh(returnStdout:true, script:'git show --pretty="" --name-only').trim()
                     echo "${files}"
@@ -95,7 +94,7 @@ pipeline{
 
                 def deployPath = apimkrPath+filelist[0];
                 dir(deployPath){
-                   sh("npm run deployTest")
+                   sh("npm run deployTest -u ${env.apigee_deploy_user}:${env.apigee_deploy_user_pwd}")
                 }
 
             }
