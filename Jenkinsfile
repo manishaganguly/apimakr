@@ -27,6 +27,7 @@ pipeline{
 
                 dir(gitPath){
                    script{
+		    echo "${env.apigee_deploy_user}"
                     sh('git pull')
                     files = sh(returnStdout:true, script:'git show --pretty="" --name-only').trim()
                     echo "${files}"
