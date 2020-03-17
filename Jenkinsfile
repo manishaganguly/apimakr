@@ -1,7 +1,7 @@
 def files = ''
 def filelist = []
 def fileNmExt =''
-def gitPath = '/home/ec2-user/git/APIMakerDemo/apimakr/'
+def gitPath = '/home/ec2-user/git/apimakr/'
 def apimkrPath = '/home/ec2-user/ctsapimakr/'
 def org = 'manishamishra-eval'
 pipeline{
