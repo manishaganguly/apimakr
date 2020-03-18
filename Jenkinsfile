@@ -3,7 +3,7 @@ def filelist = []
 def fileNmExt =''
 //def gitPath = '/home/ec2-user/git/apimakr/'
 //def apimkrPath = '/home/ec2-user/ctsapimakr/'
-def gitPath = ' /TestAPI/git/apimakr/'
+def gitPath = '/TestAPI/git/apimakr/'
 def apimkrPath = '/TestAPI/ctsapimakr/'
 def org = 'manishamishra-eval'
 pipeline{
