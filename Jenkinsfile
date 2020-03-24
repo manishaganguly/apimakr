@@ -62,7 +62,10 @@ pipeline{
 				
                 sh("cp ${gitpullpath} ${oasPath}")
                 dir(apimkrPath){
-			sh("who i am")
+			sh("cd ctsapimakr")
+			sh("npm install -i")
+			sh("npm install -g")
+			sh("cd ..")
                    sh("ctsapimakr initialize ${filelist[0]} ${org} ${oasPath}")
                 }
 
