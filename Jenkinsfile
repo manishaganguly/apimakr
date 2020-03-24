@@ -61,7 +61,7 @@ pipeline{
 				
                 sh("cp ${gitpullpath} ${oasPath}")
                 dir(apimkrPath){
-			sh("sudo su")
+			sh("who i am")
                    sh("ctsapimakr initialize ${filelist[0]} ${org} ${oasPath}")
                 }
 
