@@ -21,7 +21,7 @@ paths:
   /:
     get:
       summary: Get all products
-      description: This endpoint returns a list of all products as an array
+      description: This endpoint returns a list of all products as an array.
       responses:
         '200':
           description: OK
