@@ -31,7 +31,7 @@ paths:
       x-throttling-tier: Unlimited
     post:
       summary: Create a new Product
-      description: This endpoint will create a new Product.
+      description: This endpoint will create a new Product
       parameters:
         - name: body
           required: true
