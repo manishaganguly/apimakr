@@ -26,6 +26,7 @@ pipeline{
 
             steps{
 
+			sh("who i am")
                 dir(gitPath){
                    script{
 					echo "${env.apigee_deploy_user}"
